@@ -1,0 +1,40 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
+  <diagram name="Page-1" id="uniqueDiagramIdHere">
+    <mxGraphModel dx="1678" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="ATM" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="110" y="60" width="400" height="216" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Methods:" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
+          <mxGeometry y="26" width="400" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;+ static void main(String[] args)&lt;br&gt;- static void handleTransactions(Scanner, BankAccount)&lt;br&gt;- static void handleMfsServices(Scanner, BankAccount)&lt;br&gt;- static BankAccount loginAndAuthenticate(Scanner)&lt;br&gt;- static BankAccount loadAccount(String)&lt;br&gt;- static BankAccount createNewAccount(Scanner)&lt;br&gt;- static void saveAccount(BankAccount)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Courier New;" parent="3" vertex="1">
+          <mxGeometry x="5" y="5" width="390" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="ATM.BankAccount" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="360" width="400" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Attributes:" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5" vertex="1">
+          <mxGeometry y="26" width="400" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;- accountNumber: String&lt;br&gt;- accountHolderName: String&lt;br&gt;- balance: double&lt;br&gt;- pin: int&lt;br&gt;- transactions: List" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Courier New;" parent="6" vertex="1">
+          <mxGeometry x="5" y="5" width="390" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Methods:" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5" vertex="1">
+          <mxGeometry y="146" width="400" height="234" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;+ BankAccount(String, String, double, int)&lt;br&gt;+ BankAccount(String, String, double, int, List)&lt;br&gt;- void addTransaction(String, double)&lt;br&gt;+ boolean validatePin(int)&lt;br&gt;+ void setPin(int)&lt;br&gt;+ String getAccountNumber()&lt;br&gt;+ String getAccountHolderName()&lt;br&gt;+ int getPin()&lt;br&gt;+ double getBalance()&lt;br&gt;+ List getTransactions()&lt;br&gt;+ void deposit(double, String)&lt;br&gt;+ void withdraw(double, String)&lt;br&gt;+ void displayMiniStatement()" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;overflow=hidden;fontFamily=Courier New;" parent="8" vertex="1">
+          <mxGeometry x="5" y="5" width="390" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="" style="endArrow=diamondThin;endFill=1;startArrow=none;endSize=10;html=1;rounded=0;sourcePerimeterSpacing=0;startFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2" target="5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="310" as="sourcePoint" />
+            <mxPoint x="410" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
